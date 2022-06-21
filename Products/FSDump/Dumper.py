@@ -5,9 +5,9 @@ $Id$
 import os
 
 from AccessControl import ClassSecurityInfo
-from Globals import DTMLFile
-from Globals import package_home
-from Globals import InitializeClass
+from AccessControl.class_init import DTMLFile
+from AccessControl.class_init import package_home
+from AccessControl.class_init import InitializeClass
 from OFS.SimpleItem import SimpleItem
 from Products.PageTemplates.PageTemplateFile import PageTemplateFile
 from ZODB.POSException import ConflictError
