@@ -5,8 +5,8 @@ $Id$
 import os
 
 from AccessControl import ClassSecurityInfo
-from AccessControl.class_init import DTMLFile
-from AccessControl.class_init import package_home
+from App.special_dtml import DTMLFile
+from App.Common import package_home
 from AccessControl.class_init import InitializeClass
 from OFS.SimpleItem import SimpleItem
 from Products.PageTemplates.PageTemplateFile import PageTemplateFile
