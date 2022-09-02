@@ -150,6 +150,11 @@ class Dumper( SimpleItem ):
         #   Dump one item, using path as prefix.
         try:
             handler = self._handlers.get( object.meta_type, None )
+            # if no specific handler is found, and object is folderish,
+            # then try _dumpFolder...
+            if (handler is None and
+                getattr(object, 'objectValues', None)):
+                handler = self._handlers.get( 'Folder', None)
             if handler is not None:
                 handler( self, object, path )
                 return 1
