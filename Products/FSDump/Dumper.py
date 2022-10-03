@@ -598,6 +598,7 @@ class Dumper( SimpleItem ):
                 , 'Controller Page Template' : _dumpControllerPageTemplate
                 , 'Page Template'   : _dumpPageTemplate
                 , 'Z SQL Method'    : _dumpSQLMethod
+                , 'Restricted ZSQL method'    : _dumpSQLMethod
                 , 'ZCatalog'        : _dumpZCatalog
                 , 'Z Class'         : _dumpZClass
                 , 'Common Instance Property Sheet'
